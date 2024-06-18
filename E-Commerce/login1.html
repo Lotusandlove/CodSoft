@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+    <script>
+        function validateLoginForm() {
+            var username = document.forms["login"]["username"].value;
+            var password = document.forms["login"]["password"].value;
+
+            if (username === "" || password === "") {
+                alert("Both username and password are required.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body bgcolor="yellow">
+
+    <form name="login" onsubmit="return validateLoginForm()">
+        <h3> Login Page </h3>
+        username: <input type="text" name="username"><br><br>
+        password: <input type="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+
+</html>

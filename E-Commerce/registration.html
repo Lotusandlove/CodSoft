@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body bgcolor="yellow">
+
+    <h2> Registration Form </h2>
+
+    <form action="submit_form.php" method="post">
+        <lable> NAME : </lable>
+        <input type="text" id="name" name="name" required> <br><br>
+
+        <lable> PASSWORD : </lable>
+        <input type="password" id="password" name="password" required> <br><br>
+
+        <lable> Email ID : </lable>
+        <input type="email" id="email" name="email" required> <br><br>
+
+        <lable> PHONE NUMBER : </lable>
+        <input type="tel" id="phone" name="phone" required> <br><br>
+
+        <lable> DATE OF BIRTH : </lable>
+        <input type="date" id="birthdate" name="birthdate" required> <br><br>
+
+        <lable> GENDER : </lable>
+        <input type="radio" id="male" name="sex" value="male"> Male
+        <input type="radio" id="female" name="sex" value="female"> Female
+        <input type="radio" id="other" name="sex" value="other"> Other<br><br>
+        <lable>WHICH LANGUAGE IS MOST PREFER FOR YOU : </lable> <br><br>
+        <input type="checkbox" id="english" name="languages" value="english"> English
+        <input type="checkbox" id="hindi" name="languages" value="hindi"> Hindi
+        <input type="checkbox" id="tamil" name="languages" value="tamil"> Tamil
+        <input type="checkbox" id="bhojpuri" name="languages" value="bhojpuri"> Bhojpuri<br><br>
+
+        Select Your City
+        <select name="city" placeholder="choose your state">
+            <option value="Default">Please Select Anyone</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Uttar Predesh">Uttar Predesh</option>
+            <option value="Haryana">Haryana</option>
+        </select><br><br>
+
+        <lable> ADDRESS : </lable>
+        <textarea id="address" name="address" rows="2" cols="20" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
